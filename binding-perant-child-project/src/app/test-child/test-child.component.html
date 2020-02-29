@@ -1,1 +1,8 @@
-<p>test-child works!</p>
+<div>
+        <input  #myInput type="text">
+        <button (click)= "logMessage(myInput.value)">Logs</button>
+
+    <input [(ngModel)]="name" type="text">
+       {{name}}
+
+</div>
