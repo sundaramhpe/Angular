@@ -4,5 +4,11 @@
 
     <input [(ngModel)]="name" type="text">
        {{name}}
+       <!--This Is perant and Child binding-->
+       <h2>{{"Hello "+ firstName}}</h2>
+
+        <!--This Is Child  and perant binding-->
+        <button (click)="fireEvent()"> Send Event</button>
+
 
 </div>

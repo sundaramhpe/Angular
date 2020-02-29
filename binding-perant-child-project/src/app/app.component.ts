@@ -7,4 +7,6 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'binding-perant-child-project';
+  public firstName= "Sundaram C";
+  public messages="";
 }

@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input, EventEmitter, Output } from '@angular/core';
+
 
 @Component({
   selector: 'app-test-child',
@@ -8,6 +9,13 @@ import { Component, OnInit } from '@angular/core';
 export class TestChildComponent implements OnInit {
 
  public name ="";
+// Parant to Child binding
+ @Input("perantData") public firstName;
+
+ //Child to parant binding
+ @Output() public childEvent = new EventEmitter();
+
+
   constructor() { }
 
   ngOnInit(): void {
@@ -15,6 +23,9 @@ export class TestChildComponent implements OnInit {
   logMessage(value){
     console.log(value);
 
+  }
+  fireEvent(){
+    this.childEvent.emit('Hey Sundaram ');
   }
 
 }
