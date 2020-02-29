@@ -1,1 +1,10 @@
-<p>test works!</p>
+<div>
+    <h2>Interpolation Works {{name}}</h2>
+    <input type="text" id="myId" value="Amirthesh">
+    <input type="text" id="{{myId}}" >
+    <input type="text" [id]="myId" value="Amirthesh">
+    <h2>{{2+2}}</h2>
+    <h2>{{name.length}}</h2>
+    <h2>{{greetUser()}}</h2>
+    <h2 [ngClass]="messageClasses">Sundaram C</h2>
+</div>
