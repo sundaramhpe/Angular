@@ -1,5 +1,6 @@
 <h2>department-list</h2> 
 <ul class="items">
-    <li (click)='onSelect(deparmnts)' ngFor='let department of deparmnts'></li>
-    <span class="badge">{{depatment.id}}</span> {{department.name}}
+    <li (click)="onSelect(department)" *ngFor="let department of departments">
+    <span class="badge">{{department.id}}</span> {{department.name}}
+   </li>
 </ul>
