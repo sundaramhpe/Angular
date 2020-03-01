@@ -7,6 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DepartmentListComponent implements OnInit {
 
+  departments =[
+    {'id':1, 'name':'Angular'},
+    {'id':2, 'name':'Bootstrap'},
+    {'id':3, 'name':'MangoDb'},
+    {'id':4, 'name':'ReactJS'}
+  ]
+
   constructor() { }
 
   ngOnInit(): void {

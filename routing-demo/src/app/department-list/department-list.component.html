@@ -1,1 +1,5 @@
-<p>department-list works!</p>
+<h2>department-list</h2> 
+<ul class="items">
+    <li (click)='onSelect(deparmnts)' ngFor='let department of deparmnts'></li>
+    <span class="badge">{{depatment.id}}</span> {{department.name}}
+</ul>
